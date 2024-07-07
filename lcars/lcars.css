@@ -1,0 +1,42 @@
+@import url("lcars/lcars.css");
+
+:root {
+  /** Overload some Typora colours **/
+  --side-bar-bg-color: #000000;
+  --bg-color: #000000;
+  --text-color: var(--yellow);
+  --item-hover-bg-color: var(--offblack);
+  --select-text-bg-color: var(--yellow);
+  --select-text-font-color: black;
+}
+
+/** Typora specific **/
+#write {
+  margin-top: 6rem;
+}
+#write:before {
+  content: "TYPORA";
+}
+.CodeMirror * {
+  font-family: Share Tech Mono;
+  background-color: none;
+}
+img {
+  margin-left: 0 !important;
+}
+#typora-sidebar, .dropdown-menu {
+  background-color: var(--black);
+}
+h3.md-focus:before, 
+h4.md-focus:before, 
+h5.md-focus:before, 
+h6.md-focus:before {
+  position: relative;
+  font-size: inherit;
+  line-height: 100%;
+  height: 100%;
+  border: none;
+  color: rgba(0, 0, 0, 0.4);;
+  top: 0;
+  left: 0;
+}
